@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة تحكم المشاريع - Soltech Energy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    /* الهيدر */
+    .header {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 0 0 25px 25px;
+      margin-bottom: 40px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .header h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    .header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #f0f0f0;
+    }
+
+    /* Form */
+    .card-custom {
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card-custom:hover {
+      transform: translateY(-5px);
+    }
+    .form-label {
+      font-weight: 600;
+    }
+    .btn-custom {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn-custom:hover {
+      background: linear-gradient(to right, #2a5298, #1e3c72);
+      color: #fff;
+    }
+
+    /* معاينة الصورة */
+    .gallery-preview img {
+      height: 120px;
+      width: 120px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .gallery-preview img:hover {
+      transform: scale(1.05);
+    }
+
+    /* الجدول */
+    .table-responsive {
+      margin-top: 30px;
+    }
+    .table thead {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+    }
+    .table tbody tr:hover {
+      background-color: #e2e8f0;
+      transition: 0.3s;
+    }
+    .action-btns button {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>لوحة تحكم المشاريع</h1>
+    <p>أضف، عدل أو احذف المشاريع بسهولة</p>
+  </div>
+
+  <div class="container mb-5">
+
+    <!-- Form إضافة مشروع -->
+    <div class="card card-custom p-4 mb-5">
+      <h4 class="mb-4">إضافة مشروع جديد</h4>
+      <form>
+        <div class="row g-3 mb-3">
+          <div class="col-md-6">
+            <label class="form-label">اسم المشروع</label>
+            <input type="text" class="form-control" placeholder="أدخل اسم المشروع">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">المكان</label>
+            <input type="text" class="form-control" placeholder="مثال: صنعاء - اليمن">
+          </div>
+        </div>
+
+        <div class="row g-3 mb-3">
+          <div class="col-md-4">
+            <label class="form-label">القدرة</label>
+            <input type="text" class="form-control" placeholder="مثال: 50kW">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">نوع النظام</label>
+            <input type="text" class="form-control" placeholder="مثال: Off-grid">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">السنة</label>
+            <input type="number" class="form-control" placeholder="2025">
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label class="form-label">الوصف</label>
+          <textarea class="form-control" rows="3" placeholder="أدخل وصف المشروع"></textarea>
+        </div>
+
+        <div class="mb-4">
+          <label class="form-label">رفع صورة المشروع</label>
+          <input type="file" class="form-control">
+          <div class="gallery-preview mt-2">
+            <!-- معاينة الصورة -->
+            <img src="../img/ha.jpg" alt="معاينة">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-custom px-5">إضافة المشروع</button>
+      </form>
+    </div>
+
+    <!-- جدول المشاريع -->
+    <div class="card card-custom p-4">
+      <h4 class="mb-4">قائمة المشاريع</h4>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle text-center">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>الصورة</th>
+              <th>اسم المشروع</th>
+              <th>المكان</th>
+              <th>القدرة</th>
+              <th>نوع النظام</th>
+              <th>السنة</th>
+              <th>الإجراءات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><img src="../img/ha.jpg" width="80" class="rounded"></td>
+              <td>مشروع محطة الرئيس</td>
+              <td>صنعاء - اليمن</td>
+              <td>132kW</td>
+              <td>Off-grid</td>
+              <td>2024</td>
+              <td class="action-btns">
+                <button class="btn btn-sm btn-warning"><i class="bi bi-pencil"></i></button>
+                <button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="../img/ha.jpg" width="80" class="rounded"></td>
+              <td>مزرعة الطاقة</td>
+              <td>تعز</td>
+              <td>50kW</td>
+              <td>On-grid</td>
+              <td>2025</td>
+              <td class="action-btns">
+                <button class="btn btn-sm btn-warning"><i class="bi bi-pencil"></i></button>
+                <button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

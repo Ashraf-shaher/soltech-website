@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soltech Energy</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+    }
+
+    /* Hero Section */
+  
+    .hero-section {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      border-radius: 0 0 40px 40px;
+      margin-bottom: 50px;
+    }
+    .hero-section h1 {
+      font-weight: bold;
+    }
+    .hero-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    /* Cards (Services & Projects) */
+    .custom-card {
+      border: none;
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      overflow: hidden;
+    }
+    .custom-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+    .custom-card img {
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+      transition: transform 0.4s ease;
+    }
+    .custom-card:hover img {
+      transform: scale(1.08);
+    }
+    .custom-card h5 {
+      color: #1e3c72;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#1e3c72;">
+  <div class="container">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item mx-2"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="aboutUs.html">من نحن</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="ourServices.html">الخدمات</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="ourProject.html">المشاريع</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+      </ul>
+    </div>
+    <a class="navbar-brand fw-bold fs-4" href="#">Soltech Energy</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <h1 class="display-3 fw-bold mb-4">سولتك لخدمات الطاقة</h1>
+    <p>
+      تأسست سولتك عام 2020 في اليمن لتكون أحد الأسماء الأكثر ثقة في مجال الطاقة المتجددة والخدمات الكهربائية.  
+      نقدم حلول متكاملة تشمل التصميم، الإشراف، التركيب، الاختبار، وتشغيل المشاريع الكهروميكانيكية بأعلى جودة وكفاءة.
+    </p>
+    <a href="aboutUs.html" class="btn btn-light btn-lg shadow-lg rounded-pill px-5">اقرأ المزيد</a>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">خدماتنا</h2>
+    <div class="row g-4">
+
+      <!-- Service 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card custom-card h-100 shadow-sm">
+          <img src="img/OIP (1).jpg" class="card-img-top" alt="تركيبات كاميرات المراقبة">
+          <div class="card-body text-center">
+            <h5 class="card-title">تركيبات كاميرات المراقبة</h5>
+            <p class="card-text text-muted">نوفر حلول متكاملة لأنظمة المراقبة الحديثة لضمان أعلى درجات الأمان والموثوقية.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card custom-card h-100 shadow-sm">
+          <img src="img/OIP.jpg" class="card-img-top" alt="تركيب أجهزة الإنذار بالحريق">
+          <div class="card-body text-center">
+            <h5 class="card-title">تركيب أجهزة الإنذار بالحريق</h5>
+            <p class="card-text text-muted">نقوم بتركيب أحدث أنظمة الإنذار لحماية المنشآت وضمان استجابة فورية في حالات الطوارئ.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-4 col-sm-6">
+
+        <div class="card custom-card h-100 shadow-sm">
+          <img src="img/OIP (1).jpg" class="card-img-top" alt="صيانة الأنظمة الكهربائية">
+          <div class="card-body text-center">
+            <h5 class="card-title">صيانة الأنظمة الكهربائية</h5>
+            <p class="card-text text-muted">خدمات فحص وصيانة دورية لضمان استمرارية عمل الأنظمة بكفاءة عالية وبدون انقطاع.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">مشاريعنا</h2>
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-4 col-sm-6">
+        <a href="projectDetails.html" class="text-decoration-none text-dark">
+        <div class="card custom-card h-100 shadow-sm">
+          <img src="img/ha.jpg" class="card-img-top" alt="مشروع محطة الرئيس">
+          <div class="card-body text-center">
+            <h5 class="card-title">مشروع محطة الرئيس</h5>
+            <p class="card-text text-muted">قدرة 132kW - نظام متكامل بأعلى المواصفات الفنية.</p>
+          </div>
+        </div>
+      </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4 col-sm-6">
+        <a href="projectDetails.html" class="text-decoration-none text-dark">
+        <div class="card custom-card h-100 shadow-sm">
+          <img src="img/ha.jpg" class="card-img-top" alt="مزرعة - تعز">
+          <div class="card-body text-center">
+            <h5 class="card-title">مزرعة - تعز</h5>
+            <p class="card-text text-muted">قدرة 50kW - نظام On-grid لدعم النشاط الزراعي بالكهرباء.</p>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4 col-sm-6">
+        <a href="projectDetails.html" class="text-decoration-none text-dark">
+        <div class="card custom-card h-100 shadow-sm">
+          <img src="img/ha.jpg" class="card-img-top" alt="مصنع - عدن">
+          <div class="card-body text-center">
+            <h5 class="card-title">مصنع - عدن</h5>
+            <p class="card-text text-muted">قدرة 100kW - نظام هجين متطور يلبي احتياجات الصناعة.</p>
+          </div>
+        </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">تواصل معنا</h2>
+    <form class="w-100 w-md-75 mx-auto">
+      <div class="mb-3">
+        <label class="form-label fw-bold">الاسم</label>
+        <input type="text" class="form-control shadow-sm" placeholder="اسمك الكامل">
+      </div>
+      <div class="mb-3">
+        <label class="form-label fw-bold">البريد الإلكتروني</label>
+        <input type="email" class="form-control shadow-sm" placeholder="example@mail.com">
+      </div>
+      <div class="mb-3">
+        <label class="form-label fw-bold">الرسالة</label>
+        <textarea class="form-control shadow-sm" rows="4" placeholder="اكتب رسالتك"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg shadow-lg w-100">إرسال</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p class="mb-0">&copy; 2025 Soltech Energy Services - جميع الحقوق محفوظة</p>
+  <div class="mt-2">
+    <a href="#" class="text-white mx-2"><i class="bi bi-facebook fs-5"></i></a>
+    <a href="#" class="text-white mx-2"><i class="bi bi-twitter fs-5"></i></a>
+    <a href="#" class="text-white mx-2"><i class="bi bi-linkedin fs-5"></i></a>
+  </div>
+</footer>
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
